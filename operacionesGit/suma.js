@@ -1,10 +1,6 @@
-let n1=prompt("ingrese el primer número de la suma")
-let n2=prompt("ingrese el segundo número de la suma")
-
-let suma = n1+n2
-
-const button = document.querySelector("button");
-
-button.onclick = function () {
-  alert("¡Hola , el resultado de la suma es:" + suma);
-};
+function sumar() {
+  var numero1 = document.getElementById("num1").value;
+  var numero2 = document.getElementById("num2").value;
+  var resultado = parseInt(numero1) + parseInt(numero2);
+  document.getElementById("resultado").innerHTML = resultado;
+}
